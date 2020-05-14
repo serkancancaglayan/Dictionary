@@ -47,11 +47,10 @@ bool es_Anlam(vector<string>aciklama)
 //verilen aciklama kaydin aciklamalarinda varsa true , yoksa false dondurur
 bool control(const string &str,vector<string>aciklama)
 {
-	bool control1=false;
 	for(unsigned i=0;i<aciklama.size();i++)
 		if(aciklama[i] == str)
-			control1=true;
-	return control1;
+			return true;
+	return false;
 }
 
 
